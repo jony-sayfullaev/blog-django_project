@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}This Post Title{% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+{% endblock css_files %}
+
+
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title">
+            <address>By Jonibek</address>
+            <div>
+                Last Updated on <time>December 12</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam voluptatibus alias pariatur quaerat in mollitia cumque, necessitatibus, vitae quae, similique minus magnam illum maiores incidunt inventore id illo nobis dolores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, velit. Magni ipsam ipsa aliquam, vero deserunt accusantium sed maiores commodi fugiat veritatis suscipit quasi eaque expedita quo molestiae in corrupti magnam dicta sint dolorem harum nulla. Fugit nam incidunt enim.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium in inventore a velit. Debitis saepe accusantium fuga exercitationem id fugit dolorem, numquam, aliquam tempore, quos ullam autem voluptates adipisci ex natus! Dolore autem itaque natus, provident quia, nobis culpa facere quas atque corporis, nihil recusandae minima est vel eos dolorum.
+        </p>
+    </main>
+
+{% endblock content %}
