@@ -14,7 +14,7 @@
   <section id="welcome">
     <header>
         <img src="{% static 'blog/images/jony.jpg' %}" alt="Jonibek - The Author Of This Blog">
-        <h2>JONIBEK'S BLOG</h2>
+        <h2>JONIBEK' BLOG</h2>
     </header>
     <p>Hey, I am Jonibek and I love to blog about tech and the world!</p>
   </section>
@@ -22,7 +22,9 @@
   <section id="latest-posts">
     <h2>My Latest Thoughts</h2> 
     <ul>
+        {% for post in posts %}
         {% include 'blog/includes/post.html' %}
+        {% endfor %}
     </ul>
   </section>
 
