@@ -26,7 +26,22 @@
     </section>
 
     <main>
+        {{post.title}}
         {{post.content|linebreaks}}
     </main>
+
+    <div>
+        <form id="comment-form">
+            <h1>Your Comment</h1>
+            {% for comment_field in comment_form %}
+            <div class="form-control">
+                {{comment_field.label_tag}}
+                {{comment_field}}
+                {{comment_field.errors}}   
+            </div>
+            {% endfor %}
+                <button>Save Comment</button>
+        </form>
+    </div>
 
 {% endblock content %}
