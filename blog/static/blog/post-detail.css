@@ -12,11 +12,11 @@ body {
     padding: 2rem;
     width: 90%;
     max-width: 90rem;
-    border-radius: 14px;
+    border-radius: 16px;
     background-color: #5706c0;
     position: relative;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    height: 20rem;
+    height: 22rem;
 }
 
 #summary h2 {
@@ -57,6 +57,13 @@ body {
     font-weight: bold;
 }
 
+.tag {
+    background-color: white;
+    color: #390281;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
 #read-later {
     margin: 2rem 0;
 }
@@ -77,22 +84,15 @@ body {
 }
 
 main {
-    width: 80%;
+    width: 90%;
     max-width: 90rem;
     margin: 3rem auto;
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    font-weight: 500;
 }
 
-.tag {
-    background-color: white;
-    color: #390281;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-}
 
 #comment-form {
     margin: 3rem auto;
@@ -183,6 +183,7 @@ main {
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     padding: 1rem 2rem;
+    font-weight: bold;
 }
 
 #comments ul {
